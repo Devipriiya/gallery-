@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Madhavan's Website</title>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+        <style>
+           body{ background-image: url("E:/vivo/camera/IMG_20200726_183400.jpg");background-repeat: no-repeat;background-size: 100%;}
+           .sidebar {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+.dropbtn {
+  background-color: #111;
+  text-decoration: none;
+  color: white;
+  display:block;
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}   
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f0dbdb;}
+.dropdown:hover .dropdown-content {display: block;}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+} 
+        h1{font-style: italic;font-size: 20;}
+        p{font-style:Arial;font-size: larger;}
+        </style>
+    </head>
+    <body>
+        <h1 align="center" table border="2" >Personal Profile Page of Madhavan </h1>
+        <h2 align="center"> This is a personl page of Madhavan</h2>
+        <div id="mySidebar" class="sidebar" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="E:/Python Fullstack/JS Ajax/task.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">About Me</button>
+                <div class="dropdown-content">
+                   <a href="http://www.kolasaraswathi.com/">Schooling</a>
+                   <a href="https://pachaiyappascollege.edu.in/">College</a>
+                   <a href="https://www.linkedin.com/company/aurora-arc-in/mycompany/">Profession</a>
+                </div>
+            </div>
+            <a href="gallery.html">Gallery</a>
+            <a href="E:\Python Fullstack\CSS\Contact.html">Contact</a>
+          </div>
+          
+          <div id="main" style="    margin-top: -147px;
+          margin-left: -25px;">
+            <button class="openbtn" onclick="openNav()">☰ </button> 
+            
+            <script>
+                function openNav() {
+                  document.getElementById("mySidebar").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidebar").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                }
+                </script>
+
+                </div>
+        <p style="    margin-top: 93px;">Hi all im currently pursing my python Fullstack course from Fita Academy. Who is currentlyseeking roles in fullstack development</p>
+    </div> 
+    </body>
+</html>
